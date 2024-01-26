@@ -33,7 +33,11 @@
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./index.html">Студія</a>
+              <a
+                class="header-nav-link header-nav-link-checked"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
@@ -74,6 +78,7 @@
     </header>
     <!-- Головна сторінка -->
     <main>
+      <div class="padding-hero" id="scroll-to-top"></div>
       <!-- Головна частина сайту -->
       <section class="hero">
         <div class="container container-hero">
@@ -143,33 +148,39 @@
           <h2 class="doing-title">Чим ми займаємося</h2>
           <ul class="doing-list">
             <li class="doing-item">
-              <img
-                class="doing-photo"
-                src="./img/doing/photo-1.jpg"
-                alt="Чоловік пише код"
-              />
-              <div class="doing-text-container">
-                <h3 class="doing-subtitle">Десктопні додатки</h3>
+              <div class="doing-photo-container">
+                <img
+                  class="doing-photo"
+                  src="./img/doing/photo-1.jpg"
+                  alt="Чоловік пише код"
+                />
+                <div class="doing-overlay">
+                  <h3 class="doing-subtitle">Десктопні додатки</h3>
+                </div>
               </div>
             </li>
             <li class="doing-item">
-              <img
-                class="doing-photo"
-                src="./img/doing/photo-2.jpg"
-                alt="Жінка вибирає дизайн"
-              />
-              <div class="doing-text-container">
-                <h3 class="doing-subtitle">Мобільні додатки</h3>
+              <div class="doing-photo-container">
+                <img
+                  class="doing-photo"
+                  src="./img/doing/photo-2.jpg"
+                  alt="Жінка вибирає дизайн"
+                />
+                <div class="doing-overlay">
+                  <h3 class="doing-subtitle">Мобільні додатки</h3>
+                </div>
               </div>
             </li>
             <li class="doing-item">
-              <img
-                class="doing-photo"
-                src="./img/doing/photo-3.jpg"
-                alt="Жінка вибирає колір"
-              />
-              <div class="doing-text-container">
-                <h3 class="doing-subtitle">Дизайнерські рішення</h3>
+              <div class="doing-photo-container">
+                <img
+                  class="doing-photo"
+                  src="./img/doing/photo-3.jpg"
+                  alt="Жінка вибирає колір"
+                />
+                <div class="doing-overlay">
+                  <h3 class="doing-subtitle">Дизайнерські рішення</h3>
+                </div>
               </div>
             </li>
           </ul>
@@ -633,6 +644,13 @@
           <button class="mobal-btn" type="submit">Відправити</button>
         </form>
       </div>
+    </div>
+    <div class="scroll container">
+      <a class="scroll-link" href="#scroll-to-top">
+        <svg class="scroll-icon" width="29" height="22">
+          <use href="./img/icons.svg#top-arrow"></use>
+        </svg>
+      </a>
     </div>
     <script src="./js/modal.js"></script>
   </body>
